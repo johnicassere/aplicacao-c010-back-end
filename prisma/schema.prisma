@@ -50,8 +50,11 @@ model Menu {
   observacao String?
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  mesas      Mesa[]
+
+
 
 
   @@map("menu")
+  Mesa   Mesa?   @relation(fields: [mesaId], references: [id])
+  mesaId String?
 }

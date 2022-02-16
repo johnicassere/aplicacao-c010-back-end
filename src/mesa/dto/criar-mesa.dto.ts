@@ -15,6 +15,11 @@ export class CriarMesaDto{
     @IsBoolean()
     livre: true;
 
+    @ApiProperty()
+    @IsString()
+    @IsNotEmpty()
+    imagem: string;
+
 
     @ApiProperty()
     @IsString()

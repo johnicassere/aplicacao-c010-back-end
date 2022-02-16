@@ -21,6 +21,7 @@ export class MesaService {
      data:{
       numeroMesa: criarMesaDto.numeroMesa,
       livre: criarMesaDto.livre,
+      imagem: criarMesaDto.imagem,
       descricao: criarMesaDto.descricao,
       id: mesaId,
     },
