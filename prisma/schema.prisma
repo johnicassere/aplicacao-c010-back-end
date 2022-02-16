@@ -28,6 +28,7 @@ model Mesa {
   id         String   @id @default(uuid())
   numeroMesa Int      @default(autoincrement())
   livre      Boolean
+  imagem     String
   descricao  String
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
