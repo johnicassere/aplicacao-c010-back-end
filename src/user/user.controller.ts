@@ -26,8 +26,8 @@ export class UserController {
   @ApiOperation({
     summary: 'Ler todos os usuários',
   })
-  @ApiBearerAuth()
-  @UseGuards(AuthGuard())
+  //@ApiBearerAuth()
+  //@UseGuards(AuthGuard())
   findMany(): Promise<UserDto[]>{
     return this.userService.findMany();
   }
